@@ -45,10 +45,12 @@ const defaulStyles = {
     color: '#fff',
     fontSize: 30,
     paddingBottom: 20,
+    textAlign: 'center',
   },
   description: {
     color: '#fff',
     fontSize: 20,
+    textAlign: 'center',
   },
   controllText: {
     color: '#fff',
@@ -245,7 +247,7 @@ export default class AppIntro extends Component {
     const pageView = (
       <View style={[this.styles.slide, { backgroundColor }]} showsPagination={false} key={index}>
         <Animated.View style={[this.styles.header, ...AnimatedStyle1.transform]}>
-          <Image style={imgStyle} source={imgSource} />
+          <Image style={imgStyle} resizeMode='contain' source={imgSource} />
         </Animated.View>
         <View style={this.styles.info}>
           <Animated.View style={AnimatedStyle2.transform}>
