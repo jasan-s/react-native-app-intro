@@ -19,7 +19,7 @@ export const DoneButton = ({
         transform: [{
           translateX: skipFadeOpacity.interpolate({
             inputRange: [0, 1],
-            outputRange: [0, 20],
+            outputRange: [5, 20],
           }),
         }],
       }]}>
