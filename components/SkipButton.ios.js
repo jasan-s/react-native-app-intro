@@ -18,7 +18,7 @@ export const SkipButton = ({
       transform: [{
         translateX: skipFadeOpacity.interpolate({
           inputRange: [0, 1],
-          outputRange: [0, 15],
+          outputRange: [5, 15],
         }),
       }],
     }]}
